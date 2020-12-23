@@ -1,2 +1,3 @@
 # jest-vtu
-for vue-test-utils with jest
+
+jest matchers for vtu

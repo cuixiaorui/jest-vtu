@@ -1,0 +1,39 @@
+{
+  "name": "jest-vtu",
+  "version": "1.0.2",
+  "description": "jest matchers for vtu and support vue3",
+  "main": "dist/index.js",
+  "types": "src/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cuixiaorui/jest-vtu.git"
+  },
+  "keywords": [
+    "jest",
+    "vue3",
+    "test",
+    "jest-dom",
+    "vue-test-utils",
+    "jest-vtu",
+    "vue-test-helpers"
+  ],
+  "author": "cuixiaorui",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cuixiaorui/jest-vtu/issues"
+  },
+  "homepage": "https://github.com/cuixiaorui/jest-vtu#readme",
+  "devDependencies": {
+    "@types/babel__core": "^7.1.12",
+    "@types/jest": "^26.0.19",
+    "typescript": "^4.1.3"
+  }
+}
