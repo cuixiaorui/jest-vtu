@@ -1,6 +1,6 @@
 {
   "name": "jest-vtu",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "jest matchers for vtu and support vue3",
   "main": "dist/index.js",
   "types": "src/index.d.ts",
