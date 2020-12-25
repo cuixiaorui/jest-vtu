@@ -43,5 +43,33 @@ declare module "@vue/test-utils" {
     ): DOMWrapper<SVGElementTagNameMap[K]>;
 
     getByTestId<T extends Element>(selector: string): DOMWrapper<T>;
+
+    findByTestId<K extends keyof HTMLElementTagNameMap>(
+      selector: K
+    ): DOMWrapper<HTMLElementTagNameMap[K]>;
+    findByTestId<K extends keyof SVGElementTagNameMap>(
+      selector: K
+    ): DOMWrapper<SVGElementTagNameMap[K]>;
+    findByTestId<T extends Element>(selector: string): DOMWrapper<T>;
+  }
+
+  export declare class DOMWrapper<ElementType extends Element> {
+    getByTestId<K extends keyof HTMLElementTagNameMap>(
+      selector: K
+    ): DOMWrapper<HTMLElementTagNameMap[K]>;
+
+    getByTestId<K extends keyof SVGElementTagNameMap>(
+      selector: K
+    ): DOMWrapper<SVGElementTagNameMap[K]>;
+
+    getByTestId<T extends Element>(selector: string): DOMWrapper<T>;
+
+    findByTestId<K extends keyof HTMLElementTagNameMap>(
+      selector: K
+    ): DOMWrapper<HTMLElementTagNameMap[K]>;
+    findByTestId<K extends keyof SVGElementTagNameMap>(
+      selector: K
+    ): DOMWrapper<SVGElementTagNameMap[K]>;
+    findByTestId<T extends Element>(selector: string): DOMWrapper<T>;
   }
 }
