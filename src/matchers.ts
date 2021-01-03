@@ -6,6 +6,7 @@ expect.extend({
   toBeVisible,
   toHaveTextContent,
   toBeExist,
+  toHaveStyle,
 });
 
 function toHaveClass(wrapper, className) {
@@ -34,4 +35,8 @@ function toHaveTextContent(wrapper, text: string) {
 
 function toBeExist(wrapper) {
   return matchers.toBe(wrapper.exists(), true);
+}
+
+function toHaveStyle(wrapper, css) {
+  return matchers.toMatchObject(wrapper.element.style, css);
 }

@@ -1,5 +1,9 @@
 <template>
-  <div class="el-button el-button-small" foo="1">
+  <div
+    class="el-button el-button-small"
+    foo="1"
+    style="color: red;font-size:50px"
+  >
     button
     <button id="core" disabled></button>
     <div id="testVisible" v-show="false"></div>

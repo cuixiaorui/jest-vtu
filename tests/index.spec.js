@@ -74,6 +74,23 @@ describe("matchers", () => {
       expect(wrapper.find("#testNotExist")).not.toBeExist();
     });
   });
+
+  describe("toHaveStyle", () => {
+    it("have style", () => {
+      const wrapper = mount(Button);
+      expect(wrapper).toHaveStyle({
+        color: "red",
+        fontSize:"50px"
+      });
+    });
+
+    it("not have style", () => {
+      const wrapper = mount(Button);
+      expect(wrapper).not.toHaveStyle({
+        color:"blue"
+      });
+    });
+  });
 });
 
 describe("vtuPlugins", () => {

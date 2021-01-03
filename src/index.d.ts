@@ -26,6 +26,7 @@ declare global {
       toBeVisible(): R;
       toHaveTextContent(text: string): R;
       toBeExist(): R;
+      toHaveStyle(): R;
     }
   }
 }
